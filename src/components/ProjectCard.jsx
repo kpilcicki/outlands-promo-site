@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 
 const Wrapper = styled.a`
   width: 100%;
-  ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 text-white`};
+  ${tw`shadow-lg relative no-underline rounded-lg text-white`};
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
@@ -23,18 +23,22 @@ const Title = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
-const ProjectCard = ({ title, link, children, bg }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
-    <Text>{children}</Text>
-    <Title>{title}</Title>
+const Image = styled.div`
+  width: 100%;
+  height: 300px;
+  background-image: url(${props => props.src});
+  background-size: cover;
+`
+
+const ProjectCard = ({ img, onClick }) => (
+  <Wrapper onClick={onClick}>
+    <Image src={img} alt="" />
   </Wrapper>
 )
 
 export default ProjectCard
 
 ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
-  bg: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 }
