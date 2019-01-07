@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Lightbox from 'react-image-lightbox'
 import tw from 'tailwind.macro'
-import { Portal } from 'react-portal';
+import { Portal } from 'react-portal'
 
 import Projects from '../views/Projects'
 import ProjectCard from './ProjectCard'
