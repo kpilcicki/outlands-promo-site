@@ -58,25 +58,17 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="John Doe" />
           <AboutSub>
-            The Game is about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia, tellus non lobortis
-            cursus, urna magna facilisis odio, eu scelerisque metus enim non dui.
+          An extraterrestrial pup ends up far away from home, and with the guidance of the player, it has to find its way back—all the while overcoming its increasing hunger. 
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          Pellentesque eget placerat libero. Morbi quis vestibulum neque, ac interdum ligula. Quisque condimentum
-          aliquet blandit. Donec cursus mi et elit facilisis, sed tempor tellus ornare. Praesent ut tempus lorem. Donec
-          suscipit vel neque vel lobortis. Maecenas venenatis consequat urna, ac consectetur purus placerat sit amet.
-          Fusce suscipit tellus augue, ac lacinia urna mollis sit amet. Morbi lacinia erat et varius volutpat. Curabitur
-          sed fermentum est. Suspendisse vel scelerisque metus. Pellentesque tristique enim non turpis fermentum, quis
-          suscipit massa consequat.
-          <br /> <br /> Praesent eu sapien accumsan, ullamcorper sapien vitae, egestas elit. Interdum et malesuada fames
-          ac ante ipsum primis in faucibus. Ut nec elit cursus risus vestibulum varius venenatis rutrum orci. Donec ut
-          erat posuere, fermentum mi et, laoreet felis. Proin pretium vulputate egestas. Duis orci nunc, tempus vitae
-          metus vitae, mattis hendrerit libero. Donec at feugiat dolor. Aenean non odio non magna finibus rhoncus. Nam
-          porttitor eros vel ligula faucibus iaculis. Sed mattis posuere velit, sed egestas libero tincidunt eget.
-          Aenean tincidunt, ante eu fermentum rutrum, massa lorem fermentum lacus, interdum scelerisque augue eros eu
-          nisl. Morbi vitae elit ante. Ut pellentesque, lectus ac facilisis bibendum, ex nulla viverra consectetur mi
-          ante ac eros.
+          The player visits numerous alien places that are not quite right. They violate our understanding of physics and our gameplay expectations. Each world presents a unique challenge. 
+          After entering a stage the player has to quickly accustom themselves to the rules reigning within and exploit them to satisfy their character’s ever-increasing hunger.
+          <br /> <br />
+          The alien creature they control needs food to gain the energy required to travel onto other realms—an ability whose unaccustomed use may have very well been the cause of its current predicament.
+          It can only digest organic matter, however swallowing other things can still prove useful to the player—e.g. devouring rocks on a low-gravity planet may allow them to just not be blown away by the winds (and help them reach a tasty treat).
+          <br /> <br />
+          Of course, some things might just refuse to get eaten. But a little encouragement goes a long way. Usually, the things’ pieces are more cooperative.
         </AboutDesc>
       </About>
       <Contact>
