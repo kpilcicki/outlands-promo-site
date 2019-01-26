@@ -37,8 +37,8 @@ const Modal = styled.div`
 
 const ModalImage = styled.div`
   background-image: url(${props => props.src});
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 70%;
   background-size: cover;
 `;
 
@@ -104,7 +104,7 @@ export class Screenshots extends Component {
         { lightboxIsOpen && 
           <Portal>
             <Modal onClick={this.closeLightbox}>
-              <Image src={welcome} height={700} />
+              <ModalImage src={welcome} />
             </Modal>
           </Portal>
         }
