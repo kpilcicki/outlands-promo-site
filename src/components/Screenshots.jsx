@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Lightbox from 'react-image-lightbox'
 import tw from 'tailwind.macro'
 import { Portal } from 'react-portal'
+import { Image } from 'rebass';
 
 import Projects from '../views/Projects'
 import ProjectCard from './ProjectCard'
@@ -24,11 +25,28 @@ const ProjectsWrapper = styled.div`
   }
 `
 
+const Modal = styled.div`
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ModalImage = styled.div`
+  background-image: url(${props => props.src});
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+`;
+
 const imagesArray = [welcome, welcome, welcome, welcome]
 
 export class Screenshots extends Component {
   state = {
-    lightboxIsOpen: true,
+    lightboxIsOpen: false,
     currentImage: 0,
   }
 
@@ -83,16 +101,13 @@ export class Screenshots extends Component {
           <ProjectCard img={welcome} onClick={this.openLightbox} />
           <ProjectCard img={welcome} onClick={this.openLightbox} />
         </ProjectsWrapper>
-        {/* <Portal>
-          <Lightbox
-            currentImage={currentImage}
-            images={imagesArray}
-            isOpen={lightboxIsOpen}
-            onClickNext={this.gotoNext}
-            onClickPrev={this.gotoPrevious}
-            onClose={this.closeLightbox}
-          />
-        </Portal> */}
+        { lightboxIsOpen && 
+          <Portal>
+            <Modal onClick={this.closeLightbox}>
+              <Image src={welcome} height={700} />
+            </Modal>
+          </Portal>
+        }
       </Projects>
     )
   }
