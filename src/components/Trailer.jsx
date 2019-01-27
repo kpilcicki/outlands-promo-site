@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import "video-react/dist/video-react.css"
 import YouTube from 'react-youtube'
 
 import { Title } from '../elements/Titles'
