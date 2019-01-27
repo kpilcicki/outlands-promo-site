@@ -9,7 +9,7 @@ import SVG from '../components/SVG'
 
 const TrailerView = ({ children }) => (
   <>
-    <Divider bg="linear-gradient(to left, #9D742C 10%, #51A756 90%)" clipPath="polygon(0 24%, 100% 0, 100% 79%, 0 100%)" speed={0.2} offset={3.05} height="120%" />
+    <Divider bg="linear-gradient(to left, #9D742C 10%, #51A756 90%)" clipPath="polygon(0 24%, 100% 0, 100% 79%, 0 100%)" speed={0.2} offset={3} height="120%" />
     <Divider speed={0.1} offset={3}>
       <UpDown>
         <SVG icon="box" hiddenMobile width={6} fill={colors.blue} left="50%" top="75%" />
