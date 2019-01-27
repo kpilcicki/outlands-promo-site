@@ -17,6 +17,7 @@ import Contact from '../views/Contact'
 
 import avatar from '../images/myavatar.png'
 import { Screenshots } from '../components/Screenshots'
+import { Trailer } from '../components/Trailer';
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
@@ -45,7 +46,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero>
         <BigTitle>Outlands</BigTitle>
         <Subtitle>
@@ -53,6 +54,7 @@ const Index = () => (
         </Subtitle>
       </Hero>
       <Screenshots />
+      <Trailer />
       <About>
         <Title>About</Title>
         <AboutHero>

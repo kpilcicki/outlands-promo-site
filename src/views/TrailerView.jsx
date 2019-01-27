@@ -7,10 +7,10 @@ import { UpDown, UpDownWide } from '../styles/animations'
 import { colors } from '../../tailwind'
 import SVG from '../components/SVG'
 
-const About = ({ children }) => (
+const TrailerView = ({ children }) => (
   <>
-    <Divider bg="#23262b" clipPath="polygon(0 0, 100% 39%, 100% 100%, 0 65%)" speed={0.9} offset={4} />
-    <Divider speed={0.1} offset={4}>
+    <Divider bg="linear-gradient(to left, #9D742C 40%, #51A756 60%)" clipPath="polygon(0 24%, 100% 0, 100% 79%, 0 100%)" speed={0.2} offset={3.05} height="120%" />
+    <Divider speed={0.1} offset={3}>
       <UpDown>
         <SVG icon="box" hiddenMobile width={6} fill={colors.blue} left="50%" top="75%" />
         <SVG icon="upDown" hiddenMobile width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
@@ -29,14 +29,14 @@ const About = ({ children }) => (
       <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
       <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
     </Divider>
-    <Content speed={0.4} offset={4}>
+    <Content speed={0.4} offset={3}>
       <Inner>{children}</Inner>
     </Content>
   </>
 )
 
-export default About
+export default TrailerView
 
-About.propTypes = {
+TrailerView.propTypes = {
   children: PropTypes.node.isRequired,
 }
