@@ -11,6 +11,7 @@ import { Title } from '../elements/Titles'
 
 import welcome from '../../static/welcome.png'
 import TrailerView from '../views/TrailerView';
+import trailerVideo from '../../static/OutlandsPro.mp4'
 
 const TrailerWrapper = styled.div`
   /* ${tw`flex flex-wrap justify-between mt-8`}; */
@@ -39,24 +40,13 @@ export class Trailer extends Component {
     return (
         <TrailerView>
           <Title>Trailer</Title>
-          {/* <ModalImage /> */}
-          {/* <ProjectsWrapper>
-            <ProjectCard img={welcome} onClick={this.openLightbox} />
-            <ProjectCard img={welcome} onClick={this.openLightbox} />
-            <ProjectCard img={welcome} onClick={this.openLightbox} />
-            <ProjectCard img={welcome} onClick={this.openLightbox} />
-          </ProjectsWrapper> */}
-          {/* <TrailerWrapper> */}
           <Player
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-            // fluid={false}
-            // width="80%"
-            // height="50vh"
+            src={trailerVideo}
+            preload="auto"
           >
             <ControlBar disableCompletely />
             <BigPlayButton position="center" />
           </Player>
-          {/* </TrailerWrapper> */}
         </TrailerView>
     )
   }

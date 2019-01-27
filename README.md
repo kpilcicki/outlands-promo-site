@@ -92,7 +92,7 @@ module.exports = {
   siteTitleShort: 'Cara', // short_name for manifest
   siteUrl: 'https://cara.lekoarts.de', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
+  siteLogo: '/logos/logo.jpg', // Used for SEO and manifest
   siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional

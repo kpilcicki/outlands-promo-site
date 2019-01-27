@@ -75,7 +75,7 @@ const Index = () => (
       </About>
       <Contact>
         <Inner>
-          <Title>Get in touch</Title>
+          <Title>Authors</Title>
           <ContactText>
             Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
             <a href="https://wikamp.com/my">Wikamp</a> & <a href="https://www.facebook.com/my/">Facebook</a>

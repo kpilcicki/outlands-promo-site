@@ -9,6 +9,7 @@ module.exports = {
   siteUrl: 'https://outlands.netlify.com/', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteDescription: 'Promotion site for the Outlands game developed for an university course',
+  siteLogo: 'logo.jpg',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   // userTwitter: '@cara', // Twitter Username
