@@ -1,38 +1,25 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import { Portal } from 'react-portal'
-import { Player, ControlBar, BigPlayButton } from 'video-react'
 import "video-react/dist/video-react.css"
+import YouTube from 'react-youtube'
 
-import Projects from '../views/Projects'
-import ProjectCard from './ProjectCard'
 import { Title } from '../elements/Titles'
-
-import welcome from '../../static/welcome.png'
 import TrailerView from '../views/TrailerView';
-import trailerVideo from '../../static/OutlandsPro.mp4'
 
-const TrailerWrapper = styled.div`
-  /* ${tw`flex flex-wrap justify-between mt-8`}; */
-  width: 80%;
-  height: 1000px;
-`
 
-const Modal = styled.div`
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const YtContainer = styled.div`
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 
-const ModalImage = styled.div`
-  width: 100%;
-  height: 700px;
-  background-color: red;
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 `;
 
 export class Trailer extends Component {
@@ -40,13 +27,11 @@ export class Trailer extends Component {
     return (
         <TrailerView>
           <Title>Trailer</Title>
-          <Player
-            src={trailerVideo}
-            preload="auto"
-          >
-            <ControlBar disableCompletely />
-            <BigPlayButton position="center" />
-          </Player>
+          <YtContainer>
+            <YouTube
+              videoId="suBZ5MBOBUA"
+            />
+          </YtContainer>
         </TrailerView>
     )
   }
