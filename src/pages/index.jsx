@@ -23,7 +23,6 @@ import Download from '../views/Download'
 
 import { colors } from '../../tailwind'
 
-import arrowDown from '../../static/arrowDown.png'
 import downloadBox from '../../static/downloadBox.png'
 
 const AboutHero = styled.div`
@@ -79,6 +78,10 @@ const DownloadButton = styled.a`
   /* font-family: sans-serif; */
   user-select: none;
   cursor: pointer;
+  :active {
+    margin-top: 20px;
+    width: 270px;
+  }
 `
 
 const Index = () => (
