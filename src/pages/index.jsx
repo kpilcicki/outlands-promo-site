@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Parallax } from 'react-spring/addons.cjs'
+import { transparentize } from 'polished';
 
 // Components
 import Layout from '../components/Layout'
@@ -17,7 +18,13 @@ import Contact from '../views/Contact'
 
 import avatar from '../images/myavatar.png'
 import { Screenshots } from '../components/Screenshots'
-import { Trailer } from '../components/Trailer';
+import { Trailer } from '../components/Trailer'
+import Download from '../views/Download'
+
+import { colors } from '../../tailwind'
+
+import arrowDown from '../../static/arrowDown.png'
+import downloadBox from '../../static/downloadBox.png'
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
@@ -43,6 +50,37 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `
 
+const DownloadContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const DownloadIcon = styled.div`
+  background-image: url(${downloadBox});
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+`
+
+const DownloadButton = styled.a`
+  width: 250px;
+  height: 250px;
+  border: 20px solid ${colors.white};
+  border-radius: 50%;
+  background-color: ${transparentize(0.2, colors.white)};
+  /* font-size: 25px; */
+  /* color: ${colors['green-darker']}; */
+  /* color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: sans-serif; */
+  user-select: none;
+  cursor: pointer;
+`
+
 const Index = () => (
   <>
     <Layout />
@@ -54,6 +92,13 @@ const Index = () => (
         </Subtitle>
       </Hero>
       <Screenshots />
+      <Download>
+        <DownloadContainer>
+          <DownloadButton>
+            <img src={downloadBox} alt="download" />
+          </DownloadButton>
+        </DownloadContainer>
+      </Download>
       <Trailer />
       <About>
         <Title>About</Title>
