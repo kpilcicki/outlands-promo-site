@@ -55,15 +55,6 @@ const DownloadContainer = styled.div`
   justify-content: center;
 `
 
-const DownloadIcon = styled.div`
-  background-image: url(${downloadBox});
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 70px;
-  width: 70px;
-  margin-top: 10px;
-`
-
 const DownloadButton = styled.a`
   width: 250px;
   height: 250px;
@@ -98,7 +89,7 @@ const Index = () => (
       <Screenshots />
       <Download>
         <DownloadContainer>
-          <DownloadButton>
+          <DownloadButton href="https://we.tl/t-id0lE1CVL0" target="_blank" rel="noreferrer noopener nofollow">
             <img src={downloadBox} alt="download" />
           </DownloadButton>
         </DownloadContainer>
