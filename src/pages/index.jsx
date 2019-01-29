@@ -89,7 +89,7 @@ const Index = () => (
       <Screenshots />
       <Download>
         <DownloadContainer>
-          <DownloadButton href="https://we.tl/t-id0lE1CVL0" target="_blank" rel="noreferrer noopener nofollow">
+          <DownloadButton href="https://we.tl/t-cHDocTp3Lw" target="_blank" rel="noreferrer noopener nofollow">
             <img src={downloadBox} alt="download" />
           </DownloadButton>
         </DownloadContainer>
