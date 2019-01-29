@@ -43,6 +43,7 @@ const AboutDesc = styled.p`
 
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  line-height: 2em;
 `
 
 const Footer = styled.footer`
@@ -125,11 +126,16 @@ const Index = () => (
         <Inner>
           <Title>Authors</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://wikamp.com/my">Wikamp</a> & <a href="https://www.facebook.com/my/">Facebook</a>
+            Michał Roźniakowski<br />
+            Adam Dąbrowski<br />
+            Maciej Olejnik<br />
+            Michał Grzelak<br />
+            Maciej Majchrowski<br />
+            Krzysztof Pilcicki<br />
+            Filip Florczyk
           </ContactText>
         </Inner>
-        <Footer>&copy; 2019 by Outlanders. </Footer>
+        {/* <Footer>&copy; 2019 by Outlanders. </Footer> */}
       </Contact>
     </Parallax>
   </>

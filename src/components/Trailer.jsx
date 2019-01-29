@@ -28,6 +28,7 @@ export class Trailer extends Component {
           <Title>Trailer</Title>
           <YtContainer>
             <YouTube
+              opts={{ suggestedQuality: 'large' }}
               videoId="qVtaR_MPf5o"
             />
           </YtContainer>
