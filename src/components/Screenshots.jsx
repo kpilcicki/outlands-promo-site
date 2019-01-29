@@ -11,6 +11,12 @@ import { Title } from '../elements/Titles'
 
 import welcome from '../../static/welcome.png'
 import lordis from '../../static/lordis.jpg'
+import one from '../../static/1.png'
+import two from '../../static/2.png'
+import three from '../../static/3.png'
+import four from '../../static/4.png'
+import five from '../../static/5.png'
+import six from '../../static/6.png'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -30,6 +36,7 @@ const Modal = styled.div`
   position: absolute;
   width: 100vw;
   height: 100vh;
+  /* padding-top: 20px; */
   background-color: rgba(0,0,0,0.3);
   display: flex;
   justify-content: center;
@@ -43,7 +50,7 @@ const ModalImage = styled.div`
   background-size: cover;
 `;
 
-const imagesArray = [welcome, lordis, welcome, welcome]
+const imagesArray = [one, two, three, four, five, six]
 
 export class Screenshots extends Component {
   state = {
@@ -101,14 +108,16 @@ export class Screenshots extends Component {
           <ProjectCard img={imagesArray[1]} onClick={() => this.openLightbox(1)} />
           <ProjectCard img={imagesArray[2]} onClick={() => this.openLightbox(2)} />
           <ProjectCard img={imagesArray[3]} onClick={() => this.openLightbox(3)} />
+          <ProjectCard img={imagesArray[4]} onClick={() => this.openLightbox(4)} />
+          <ProjectCard img={imagesArray[5]} onClick={() => this.openLightbox(5)} />
         </ProjectsWrapper>
-        { lightboxIsOpen && 
+        {lightboxIsOpen && (
           <Portal>
             <Modal onClick={this.closeLightbox}>
-              <Image src={imagesArray[currentImage]} width="90%" />
+              <Image src={imagesArray[currentImage]} width="70%" />
             </Modal>
           </Portal>
-        }
+        )}
       </Projects>
     )
   }
