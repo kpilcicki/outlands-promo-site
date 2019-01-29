@@ -28,7 +28,7 @@ export class Trailer extends Component {
           <Title>Trailer</Title>
           <YtContainer>
             <YouTube
-              videoId="suBZ5MBOBUA"
+              videoId="qVtaR_MPf5o"
             />
           </YtContainer>
         </TrailerView>
