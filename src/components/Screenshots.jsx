@@ -114,7 +114,7 @@ export class Screenshots extends Component {
         {lightboxIsOpen && (
           <Portal>
             <Modal onClick={this.closeLightbox}>
-              <Image src={imagesArray[currentImage]} width="70%" />
+              <Image src={imagesArray[currentImage]} width="60%" />
             </Modal>
           </Portal>
         )}
